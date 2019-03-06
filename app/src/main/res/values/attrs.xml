@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ViewPager 弹性滑动-->
+    <declare-styleable name="BounceViewPager">
+        <!--    确定在滚动期间沿z轴的最大平移量。默认是150.    -->
+        <attr name="overscroll_translation" format="dimension" />
+        <!--动画的持续时间，当用户释放超过滚动。默认是400 ms。 -->
+        <attr name="overscroll_animation_duration" format="integer" />
+    </declare-styleable>
+</resources>
