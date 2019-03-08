@@ -6,8 +6,8 @@ import android.widget.LinearLayout;
 
 
 /**
- * 用來控制LinearLayout的绘制顺序
- *
+ * 用來控制LinearLayout的绘制顺序,Lineaylaoyt从右往左进行绘制
+ * <p>
  * Created by Siy on 2019/01/08.
  *
  * @author Siy
@@ -18,7 +18,7 @@ public class OrderLinearlayout extends LinearLayout {
         setChildrenDrawingOrderEnabled(true);
     }
 
-    public OrderLinearlayout(Context context,  @android.support.annotation.Nullable AttributeSet attrs) {
+    public OrderLinearlayout(Context context, @android.support.annotation.Nullable AttributeSet attrs) {
         super(context, attrs);
         setChildrenDrawingOrderEnabled(true);
     }
@@ -30,6 +30,6 @@ public class OrderLinearlayout extends LinearLayout {
 
     @Override
     protected int getChildDrawingOrder(int childCount, int i) {
-        return childCount-1-i;
+        return childCount - 1 - i;
     }
 }

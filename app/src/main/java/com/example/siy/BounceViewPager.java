@@ -389,7 +389,7 @@ public class BounceViewPager extends ViewPager {
 //----------------------------------- 上面代码是实现第一页和最后一页X轴的弹性滑动
 
     private Bitmap bg;
-    private Paint b = new Paint(1);
+    private Paint b = new Paint(Paint.ANTI_ALIAS_FLAG );
 
 
     @Override
