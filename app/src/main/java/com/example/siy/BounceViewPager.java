@@ -291,9 +291,9 @@ public class BounceViewPager extends ViewPager {
                                 final float over = deltaX + mTouchSlop;
                                 mOverscrollEffect.setPull(over / width);
                             }
-                        } else if (scrollX > width) {
-                            if (width == (lastItemIndex * widthWithMargin-getPageMargin())) {
-                                final float over = scrollX - width - mTouchSlop;
+                        } else if (scrollX > rightBound) {
+                            if (rightBound == lastItemIndex * widthWithMargin) {
+                                final float over = scrollX - rightBound - mTouchSlop;
                                 mOverscrollEffect.setPull(over / width);
                             }
                         }

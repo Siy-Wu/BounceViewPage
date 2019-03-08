@@ -27,14 +27,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_xx);
+        setContentView(R.layout.activity_main);
 
-        TextView t = findViewById(R.id.user_name);
-
-        t.setText("姓名姓姓名姓姓名姓姓名姓姓名姓姓名姓姓名姓姓名姓姓名姓姓名姓姓名姓姓名姓姓名姓");
-
-//        mViewPager = findViewById(R.id.bvp);
-//        initViewViewPager();
+        mViewPager = findViewById(R.id.bvp);
+        initViewViewPager();
     }
 
 
@@ -45,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager.setPageMargin(200);
 
-//        mViewPager.getAdapter()
 
         mViewPager.setAdapter(new PagerAdapter() {
 
